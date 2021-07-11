@@ -14,19 +14,21 @@ import EditIcon from '@material-ui/icons/Edit';
 
 function Sidebar() {
   return (
-    <div className="sideBar">
-      <div className="sideBar-Index">
-        <TwitterIcon/>
+    <div className="sideBar sticky-top">
+      <div className="sideBarWrapper">
+        <div className="sideBar-Index mb-2">
+          <TwitterIcon/>
+        </div>
+        <SideBarListItem Icon={HomeIcon} Text="Home" />
+        <SideBarListItem Icon={SearchIcon} Text="Explore" />
+        <SideBarListItem Icon={NotificationsIcon} Text="Notifications" />
+        <SideBarListItem Icon={MailOutlineIcon} Text="Messages" />
+        <SideBarListItem Icon={BookmarkBorderIcon} Text="Bookmarks" />
+        <SideBarListItem Icon={DescriptionIcon} Text="Lists" />
+        <SideBarListItem Icon={PersonIcon} Text="Profile" />
+        <SideBarListItem Icon={MoreHorizIcon} Text="More" />
+        <a className="btn btn-primary btn-block shadow btn-tweet"><span className="d-flex d-lg-none align-items-center justify-content-center"><EditIcon/></span><span class="d-none d-lg-flex align-items-center justify-content-center">Tweet</span></a>
       </div>
-      <SideBarListItem Icon={HomeIcon} Text="Home" />
-      <SideBarListItem Icon={SearchIcon} Text="Explore" />
-      <SideBarListItem Icon={NotificationsIcon} Text="Notifications" />
-      <SideBarListItem Icon={MailOutlineIcon} Text="Messages" />
-      <SideBarListItem Icon={BookmarkBorderIcon} Text="Bookmarks" />
-      <SideBarListItem Icon={DescriptionIcon} Text="Lists" />
-      <SideBarListItem Icon={PersonIcon} Text="Profile" />
-      <SideBarListItem Icon={MoreHorizIcon} Text="More" />
-      <a class="btn btn-primary btn-block shadow btn-tweet"><span class="d-flex d-lg-none align-items-center justify-content-center"><EditIcon/></span><span class="d-none d-lg-flex align-items-center justify-content-center">Tweet</span></a>
     </div>
   )
 }

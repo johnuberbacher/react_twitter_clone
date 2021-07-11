@@ -1,22 +1,35 @@
 .sideBar {
   width: auto;
+  max-width: 77px;
   display: inline-block;
-  padding: 0.5rem 0.5rem;
-  transition: 0.2s width, 0.2s padding;
-  border-right: 1px solid rgb(239, 243, 244)
+  position: fixed;
+  height: 100%;
+  transition: 0.3s width, 0.3s padding;
 }
-
+.sideBarWrapper {
+  height: 100%;
+  padding: 0.5rem 0.75rem;
+  transition: 0.3s width, 0.3s padding;
+}
 @media(min-width: 992px) {
   .sideBar {
-    display: block;
-    padding: 0.5rem 1.25rem;
+    display: flex;
+    flex-direction: revert;
+    justify-content: flex-end;
+    flex-grow: 1;
+    height: auto;
+    width: 25%;
+    max-width: 100%;
+    position: sticky;
+  }
+  .sideBar .sideBarWrapper {
     width: 275px;
+    height: auto;
   }
 }
 
 .sideBar .sideBar-Index {
   border-radius: 9999px;
-  margin: 0 auto;
   height: 52px;
   width: 52px;
   display: flex;
@@ -47,7 +60,7 @@
   border-radius: 9999px;
   font-size: 15px;
   font-weight: 700;
-  padding: 0.875rem 0.1rem
+  padding: 0.875rem 0.1rem!important;
 }
 
 .sideBar .btn-tweet svg {

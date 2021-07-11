@@ -4,11 +4,9 @@
   align-items: center;
   justify-content: flex-start;
   color: rgb(15, 20, 25);
-  margin: 0.5rem 0;
   text-decoration: none!important;
   font-size: 18px;
   font-weight: 700;
-  line-height: 24px;
 }
 
 .sideBarListItem .sideBarHover {

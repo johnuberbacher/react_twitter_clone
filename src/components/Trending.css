@@ -1,0 +1,30 @@
+.trending {
+  transition: 0.2s width, 0.2s padding;
+  width: auto;
+  display: inline-block;
+  height: 100%;
+}
+.trendingWrapper {
+  padding: 0.5rem 0.75rem;
+  transition: 0.2s width, 0.2s padding;
+}
+@media(min-width: 992px) {
+  .trending {
+    display: flex;
+    flex-direction: revert;
+    justify-content: flex-start;
+    flex-grow: 1;
+    width: 25%
+  }
+  .trending .trendingWrapper {
+    width: 275px;
+  }
+}
+
+.trending .trending-search {
+  background: #eff3f4;
+  padding: 0.66rem 1.5rem;
+  border: 0;
+  height: auto;
+  border-radius: 9999px;
+}

@@ -1,0 +1,59 @@
+.main {
+  flex-grow: 1;
+  width: 50%;
+  transition: 0.2s width, 0.2s padding;
+  margin-left: 77px;
+}
+@media(min-width: 992px) {
+  .main {
+    margin-left: 0;
+  }
+}
+
+.app {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+html, body, #root, .app {
+  height: 100%;
+}
+.feed-post .form-control {
+  overflow: hidden;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    position: relative;
+    white-space: pre-wrap;
+    font-size: 20px;
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0;
+    padding-left: 0;
+}
+.feed-post .form-control:focus {
+  border: 0;
+  border-radius: 0;
+  outline: none;
+  box-shadow:  none;
+
+}
+.feed-post .img {
+  width: 48px;
+  height: 48px;
+}
+.feed-roll {
+  background: var(--light)
+}
+.post {
+  background: white;
+  transition: 0.3s background;
+}
+.post:hover {
+  background: rgba(0, 0, 0, 0.03)
+}
+.post .img {
+  width: 48px;
+  height: 48px;
+}

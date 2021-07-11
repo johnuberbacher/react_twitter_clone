@@ -16,6 +16,18 @@ code {
     monospace;
 }
 
+.app {
+  max-width: 1400px;
+  margin: 0px auto;
+}
+
+.btn {
+  border-radius: 9999px!important;
+  font-size: 15px!important;
+  font-weight: 700!important;
+  padding: 0.5rem 1.15rem!important;
+}
+
 .shadow {
   box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px
 }
