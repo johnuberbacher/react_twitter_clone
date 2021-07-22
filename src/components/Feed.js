@@ -9,7 +9,6 @@ function Feed() {
 
   useEffect(() => {
     db.collection('posts').onSnapshot(snapshot => (
-      // Map the snapshot data as an array to setPosts
       setPosts(snapshot.docs.map(doc => doc.data()))
     ))
   })
